@@ -16,3 +16,9 @@ Abra `index.html` no navegador e clique em **Saiba mais** no card do LS-002.
 ## Checkouts de lançamento
 - LS-001: https://chk.eduzz.com/d2wrmxp4
 - LS-002: https://chk.eduzz.com/cl5gqvq3
+
+
+## Atualização LS-003
+- Página: `ls-003-garch-levels.html`
+- Checkout de lançamento: `https://chk.eduzz.com/tsoafe4f`
+- Preço exibido: R$ 147,00
