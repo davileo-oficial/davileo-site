@@ -1,6 +1,15 @@
 const button=document.querySelector('.menu-toggle');
 const nav=document.querySelector('.main-nav');
 
+if(nav&&!nav.querySelector('a[href="ninjatrader.html"]')){
+  const ninjaTraderLink=document.createElement('a');
+  ninjaTraderLink.href='ninjatrader.html';
+  ninjaTraderLink.textContent='NinjaTrader';
+  if(document.body.dataset.page==='ninjatrader') ninjaTraderLink.className='active';
+  const supportLink=nav.querySelector('a[href="suporte.html"]');
+  nav.insertBefore(ninjaTraderLink,supportLink||null);
+}
+
 if(button&&nav){
   button.addEventListener('click',()=>{
     const open=nav.classList.toggle('open');
