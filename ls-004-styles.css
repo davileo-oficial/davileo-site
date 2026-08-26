@@ -1,0 +1,125 @@
+/* Estilos exclusivos da página DAVILEO LS-004 Market Structure Map */
+.ls004-hero {
+  padding: 72px 0;
+  background: radial-gradient(circle at 76% 24%, rgba(38,117,255,.2), transparent 34%), linear-gradient(135deg,#06101b,#0a1828);
+}
+
+.ls004-hero-grid {
+  display: grid;
+  grid-template-columns: .92fr 1.08fr;
+  gap: 54px;
+  align-items: center;
+}
+
+.ls004-hero h1 {
+  font-size: 52px;
+  line-height: 1.05;
+  letter-spacing: -.045em;
+  margin: 12px 0 18px;
+}
+
+.ls004-hero p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #c3cedb;
+  max-width: 650px;
+}
+
+.ls004-cover {
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(0,0,0,.34);
+  background: #06101b;
+}
+
+.ls004-cover img {
+  width: 100%;
+  height: auto;
+}
+
+.ls004-price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.ls004-price span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: #8f9daf;
+}
+
+.ls004-price strong {
+  font-size: 34px;
+  color: #fff;
+  margin-top: 4px;
+}
+
+.structure-legend {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.structure-legend div {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.structure-legend strong {
+  display: block;
+  color: var(--blue);
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.structure-legend span {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.ls004-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.ls004-tech-grid div {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.ls004-tech-grid strong {
+  font-size: 15px;
+}
+
+.ls004-tech-grid span {
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .ls004-hero-grid { grid-template-columns: 1fr; }
+  .ls004-cover { order: -1; }
+  .structure-legend { grid-template-columns: 1fr 1fr; }
+  .ls004-hero h1 { font-size: 44px; }
+}
+
+@media (max-width: 560px) {
+  .structure-legend,
+  .ls004-tech-grid { grid-template-columns: 1fr; }
+  .ls004-hero h1 { font-size: 38px; }
+}
