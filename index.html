@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="carousel.css">
   <link rel="icon" href="assets/davileo-logo.png">
 </head>
 <body>
@@ -43,7 +44,26 @@
         </div>
         <p class="hero-note">Não conduzimos o navio. Iluminamos o caminho.</p>
       </div>
-      <div class="hero-image"><img src="assets/ls-001-session-map.png" alt="DAVILEO LS-001 Session Map no NinjaTrader 8"></div>
+      <div class="hero-carousel" data-carousel aria-label="Produtos DAVILEO em destaque">
+        <div class="hero-carousel-track">
+          <a class="hero-slide active" href="vp-001-volume-profile-classic.html" aria-hidden="false"><img src="assets/vp-001-volume-profile-classic-v2.png" alt="DAVILEO VP-001 Volume Profile Classic"><span><small>LANÇAMENTO</small>VP-001 Volume Profile Classic</span></a>
+          <a class="hero-slide" href="essentials-pack.html" aria-hidden="true" tabindex="-1"><img src="assets/essentials-pack-cover.png" alt="DAVILEO Essentials Pack"><span><small>DAVILEO PACK</small>Essentials Pack</span></a>
+          <a class="hero-slide" href="ls-001-session-map.html" aria-hidden="true" tabindex="-1"><img src="assets/ls-001-session-map.png" alt="DAVILEO LS-001 Session Map"><span><small>DAVILEO ESSENTIALS</small>LS-001 Session Map</span></a>
+          <a class="hero-slide" href="ls-002-opening-range-map.html" aria-hidden="true" tabindex="-1"><img src="assets/ls-002-opening-range.png" alt="DAVILEO LS-002 Opening Range Map"><span><small>DAVILEO ESSENTIALS</small>LS-002 Opening Range Map</span></a>
+          <a class="hero-slide" href="ls-003-garch-levels.html" aria-hidden="true" tabindex="-1"><img src="assets/ls-003-garch-levels.png" alt="DAVILEO LS-003 GARCH Levels"><span><small>DAVILEO ESSENTIALS</small>LS-003 GARCH Levels</span></a>
+          <a class="hero-slide" href="ls-004-market-structure-map.html" aria-hidden="true" tabindex="-1"><img src="assets/ls-004-market-structure-map.png" alt="DAVILEO LS-004 Market Structure Map"><span><small>DAVILEO ESSENTIALS</small>LS-004 Market Structure Map</span></a>
+        </div>
+        <button class="carousel-arrow previous" type="button" aria-label="Produto anterior">‹</button>
+        <button class="carousel-arrow next" type="button" aria-label="Próximo produto">›</button>
+        <div class="carousel-dots" role="group" aria-label="Selecionar produto">
+          <button class="active" type="button" aria-label="Mostrar VP-001" aria-current="true"></button>
+          <button type="button" aria-label="Mostrar Essentials Pack"></button>
+          <button type="button" aria-label="Mostrar LS-001"></button>
+          <button type="button" aria-label="Mostrar LS-002"></button>
+          <button type="button" aria-label="Mostrar LS-003"></button>
+          <button type="button" aria-label="Mostrar LS-004"></button>
+        </div>
+      </div>
     </div>
   </section>
 
