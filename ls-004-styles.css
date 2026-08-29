@@ -111,6 +111,41 @@
   color: var(--muted);
 }
 
+.payment-note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.vp-faq-section {
+  background: #f5f7fa;
+}
+
+.vp-faq {
+  display: grid;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.vp-faq details {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+
+.vp-faq summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #101a28;
+}
+
+.vp-faq details p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 @media (max-width: 900px) {
   .ls004-hero-grid { grid-template-columns: 1fr; }
   .ls004-cover { order: -1; }
