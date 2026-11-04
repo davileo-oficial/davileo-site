@@ -1,0 +1,3 @@
+/* Ajustes limitados ao nome comercial do Framework Pro. */
+.framework-hero .essentials-hero-grid > div{min-width:0}
+.framework-hero h1{overflow-wrap:break-word}
